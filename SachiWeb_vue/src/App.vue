@@ -20,7 +20,7 @@
     },
     methods:{
       async getEventsList(){
-        const res = await fetch("http://localhost:1429/api");
+        const res = await fetch("https://sachi-web-node.vercel.app/api");
         const eventsData = await res.json();
         console.log("eventsData" , eventsData[0].events);
         return eventsData[0].events;
